@@ -20,9 +20,6 @@ import {
   BarChart3,
   Brain,
   Users,
-  GraduationCap,
-  Award,
-  Globe,
   ChevronDown,
   Send,
   Code,
@@ -89,8 +86,8 @@ export default function FrancisLandingPage() {
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
             <div className="mb-8">
-              <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-emerald-400 to-teal-600 rounded-full flex items-center justify-center">
-                <span className="text-4xl font-bold text-white">FB</span>
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
+                <img src="/francis.jpg" alt="Francis C. Bright" className="w-full h-full object-cover" />
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4">Francis Chibuike Bright</h1>
               <p className="text-xl md:text-2xl text-gray-600 mb-2">
@@ -200,9 +197,15 @@ export default function FrancisLandingPage() {
                   <Code className="w-12 h-12 mx-auto mb-4 text-emerald-600" />
                   <h3 className="font-semibold mb-3">Programming</h3>
                   <div className="space-y-2">
-                    <Badge variant="secondary">Python</Badge>
-                    <Badge variant="secondary">SQL</Badge>
-                    <Badge variant="secondary">SPSS</Badge>
+                    <div>
+                      <Badge variant="secondary">Python</Badge>
+                    </div>
+                    <div>
+                      <Badge variant="secondary">SQL</Badge>
+                    </div>
+                    <div>
+                      <Badge variant="secondary">SPSS</Badge>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -212,9 +215,15 @@ export default function FrancisLandingPage() {
                   <BarChart3 className="w-12 h-12 mx-auto mb-4 text-emerald-600" />
                   <h3 className="font-semibold mb-3">Visualization</h3>
                   <div className="space-y-2">
-                    <Badge variant="secondary">Power BI</Badge>
-                    <Badge variant="secondary">Tableau</Badge>
-                    <Badge variant="secondary">Excel</Badge>
+                    <div>
+                      <Badge variant="secondary">Power BI</Badge>
+                    </div>
+                    <div>
+                      <Badge variant="secondary">Tableau</Badge>
+                    </div>
+                    <div>
+                      <Badge variant="secondary">Excel</Badge>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -224,9 +233,15 @@ export default function FrancisLandingPage() {
                   <TrendingUp className="w-12 h-12 mx-auto mb-4 text-emerald-600" />
                   <h3 className="font-semibold mb-3">Analytics</h3>
                   <div className="space-y-2">
-                    <Badge variant="secondary">Predictive Modeling</Badge>
-                    <Badge variant="secondary">Regression</Badge>
-                    <Badge variant="secondary">Data Cleaning</Badge>
+                    <div>
+                      <Badge variant="secondary">Predictive Modeling</Badge>
+                    </div>
+                    <div>
+                      <Badge variant="secondary">Regression</Badge>
+                    </div>
+                    <div>
+                      <Badge variant="secondary">Data Cleaning</Badge>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -236,9 +251,15 @@ export default function FrancisLandingPage() {
                   <Database className="w-12 h-12 mx-auto mb-4 text-emerald-600" />
                   <h3 className="font-semibold mb-3">Data Management</h3>
                   <div className="space-y-2">
-                    <Badge variant="secondary">ETL Processes</Badge>
-                    <Badge variant="secondary">Dashboard Design</Badge>
-                    <Badge variant="secondary">Data Architecture</Badge>
+                    <div>
+                      <Badge variant="secondary">ETL Processes</Badge>
+                    </div>
+                    <div>
+                      <Badge variant="secondary">Dashboard Design</Badge>
+                    </div>
+                    <div>
+                      <Badge variant="secondary">Data Architecture</Badge>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -344,6 +365,25 @@ export default function FrancisLandingPage() {
                     <Badge variant="secondary">Scikit-learn</Badge>
                     <Badge variant="secondary">Power BI</Badge>
                   </div>
+                  <div className="flex space-x-2">
+                    <Button
+                      size="sm"
+                      onClick={() =>
+                        window.open("https://francisbright1-readmission-app-app-muqxfb.streamlit.app/", "_blank")
+                      }
+                    >
+                      <ExternalLink className="w-4 h-4 mr-1" />
+                      Live Link
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => window.open("https://github.com/FrancisBright1/readmission-app", "_blank")}
+                    >
+                      <Github className="w-4 h-4 mr-1" />
+                      Code
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -352,17 +392,45 @@ export default function FrancisLandingPage() {
                   <div className="w-full h-48 bg-gradient-to-br from-purple-100 to-pink-100 rounded-lg mb-4 flex items-center justify-center">
                     <TrendingUp className="w-16 h-16 text-purple-600" />
                   </div>
-                  <CardTitle>Fintech Retention Analysis</CardTitle>
-                  <CardDescription>Customer Churn Pattern Analysis</CardDescription>
+                  <CardTitle>JAMB Exam Result Analysis</CardTitle>
+                  <CardDescription>
+                    The JAMB Performance Analysis project is a data-driven initiative designed to uncover meaningful
+                    insights from the results of candidates who sat for the Joint Admissions and Matriculation Board
+                    (JAMB) examination in Nigeria.
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    Comprehensive analysis of customer retention patterns with actionable recommendations.
+                    Comprehensive exploratory data analysis on students JAMB examination in Nigeria.
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     <Badge variant="secondary">SQL</Badge>
                     <Badge variant="secondary">Power BI</Badge>
                     <Badge variant="secondary">Excel</Badge>
+                  </div>
+                  <div className="flex space-x-2">
+                    <Button
+                      size="sm"
+                      onClick={() =>
+                        window.open(
+                          "https://francisbright1-jamb-performance-analysis-jamb-app-bv9irx.streamlit.app/",
+                          "_blank",
+                        )
+                      }
+                    >
+                      <ExternalLink className="w-4 h-4 mr-1" />
+                      Live Link
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() =>
+                        window.open("https://github.com/FrancisBright1/Jamb-Performance-Analysis", "_blank")
+                      }
+                    >
+                      <Github className="w-4 h-4 mr-1" />
+                      Code
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
@@ -371,99 +439,24 @@ export default function FrancisLandingPage() {
         </div>
       </section>
 
-      {/* Education & Certifications */}
+      {/* Certifications Section */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
-              Education & Certifications
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">Certifications</h2>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-semibold mb-6 flex items-center">
-                  <GraduationCap className="w-6 h-6 mr-2 text-emerald-600" />
-                  Education
-                </h3>
-                <div className="space-y-4">
-                  <Card>
-                    <CardContent className="p-4">
-                      <h4 className="font-semibold">M.Sc. Protein Biochemistry</h4>
-                      <p className="text-gray-600">University of Uyo (2024 – Present)</p>
-                      <Badge variant="outline" className="mt-2">
-                        In Progress
-                      </Badge>
-                    </CardContent>
-                  </Card>
-
-                  <Card>
-                    <CardContent className="p-4">
-                      <h4 className="font-semibold">B.Sc. Biochemistry</h4>
-                      <p className="text-gray-600">University of Uyo (2015 – 2019)</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold mb-6 flex items-center">
-                  <Award className="w-6 h-6 mr-2 text-emerald-600" />
-                  Certifications
-                </h3>
-                <div className="space-y-4">
-                  <Card>
-                    <CardContent className="p-4">
-                      <h4 className="font-semibold">Data Analysis & Wrangling</h4>
-                      <p className="text-gray-600">Data Campus Africa</p>
-                    </CardContent>
-                  </Card>
-
-                  <Card>
-                    <CardContent className="p-4">
-                      <h4 className="font-semibold">Data Management Essentials</h4>
-                      <p className="text-gray-600">iCode Africa</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-12 grid md:grid-cols-2 gap-8">
+            <div className="space-y-4">
               <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <Globe className="w-5 h-5 mr-2 text-emerald-600" />
-                    Languages
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span>English</span>
-                      <Badge>Fluent</Badge>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Igbo</span>
-                      <Badge>Fluent</Badge>
-                    </div>
-                  </div>
+                <CardContent className="p-4">
+                  <h4 className="font-semibold">Data Analysis & Wrangling</h4>
+                  <p className="text-gray-600">Data Campus Africa</p>
                 </CardContent>
               </Card>
 
               <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <TrendingUp className="w-5 h-5 mr-2 text-emerald-600" />
-                    Career Interests
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Healthcare & Fintech Analytics</li>
-                    <li>• Remote-friendly opportunities</li>
-                    <li>• Impact-driven roles</li>
-                    <li>• Startup & growth-stage companies</li>
-                  </ul>
+                <CardContent className="p-4">
+                  <h4 className="font-semibold">Data Management Essentials</h4>
+                  <p className="text-gray-600">iCode Africa</p>
                 </CardContent>
               </Card>
             </div>
@@ -519,13 +512,12 @@ export default function FrancisLandingPage() {
               </div>
 
               <div>
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="space-y-4">
                   <div>
                     <Input
                       placeholder="Your Name"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      required
                     />
                   </div>
                   <div>
@@ -534,7 +526,6 @@ export default function FrancisLandingPage() {
                       placeholder="Your Email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      required
                     />
                   </div>
                   <div>
@@ -543,14 +534,13 @@ export default function FrancisLandingPage() {
                       rows={5}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      required
                     />
                   </div>
-                  <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700">
+                  <Button onClick={handleSubmit} className="w-full bg-emerald-600 hover:bg-emerald-700">
                     <Send className="w-4 h-4 mr-2" />
                     Send Message
                   </Button>
-                </form>
+                </div>
               </div>
             </div>
           </div>
